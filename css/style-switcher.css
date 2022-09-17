@@ -2,7 +2,7 @@
     position: fixed;
     right: 0;
     top: 77px;
-    padding: 15px;
+    padding: 25px;
     width: 200px;
     z-index: 101;
     border-radius: 5px;
@@ -84,4 +84,8 @@
 
 .style-switcher .color-5{
     background-color: #cc3a3b;
+}
+
+.translatePage{
+    margin-top: 1em;
 }
