@@ -263,9 +263,9 @@ window.addEventListener("load", () => {
 })
 
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("Modal");
 
-let btn = document.getElementById("myBtn");
+let btn = document.getElementById("btnModal");
 
 let span = document.getElementsByClassName("close")[0];
 
