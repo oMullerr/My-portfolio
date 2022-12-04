@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu portfolio</title>
     <!-- <title>Meu curriculo</title> -->
     <!-- Font Awesome -->
@@ -422,6 +422,25 @@
                                     <div class="timeline-item-inner outer-shadow">
                                         <i class="fas fa-book-open icon"></i>
                                         <span>(Mes inicio, Ano inicio - Mes final, Ano final)</span>
+                                        <!-- Trigger/Open The Modal -->
+                                        <button id="myBtn">Open Modal</button>
+
+                                        <div id="myModal" class="modal">
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <span class="close">&times;</span>
+                                                    <h2>Modal Header</h2>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Some text in the Modal Body</p>
+                                                    <p>Some other text...</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <h3>Modal Footer</h3>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <h3>Item 1</h3>
                                         <h4>Local/instituição</h4>
                                     </div>
@@ -733,39 +752,7 @@
                 </div>
                 <!-- ITENS DO CONTATO/ -->
             </div>
-            <div class="row">
-                <div class="contact-form">
-                    <form>
-                        <div class="row">
-                            <div class="w-50">
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Nome" class="input-control">
-                                </div>
-                                <!-- --------- -->
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="E-mail" class="input-control">
-                                </div>
-                                <!-- --------- -->
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Assunto" class="input-control">
-                                </div>
-                            </div>
-                            <div class="w-50">
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <textarea class="input-control" placeholder="Mensagem"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="submit-btn">
-                                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar
-                                    mensagem</button>
 
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -854,16 +841,16 @@
             <script type="text/javascript"
                 src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </div>
-    </div>
-    <!-- style-switcher/ -->
 
-    <!-- main js -->
-    <script src="js/main.js"></script>
-    <!-- main js/ -->
+        <!-- style-switcher/ -->
 
-    <!-- style-switcher js -->
-    <script src="js/style-switcher.js"></script>
-    <!-- style-switcher js/ -->
+        <!-- main js -->
+        <script src="js/main.js"></script>
+        <!-- main js/ -->
+
+        <!-- style-switcher js -->
+        <script src="js/style-switcher.js"></script>
+        <!-- style-switcher js/ -->
 
 </body>
 
