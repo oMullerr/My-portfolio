@@ -848,9 +848,9 @@ img {
 }
 
 .about-section .timeline .timeline-item-inner h3 {
+  font: 600;
   font-size: 20px;
   color: var(--text-black-700);
-  font: 600;
   margin: 0 0 5px;
   text-transform: capitalize;
 }
@@ -946,6 +946,60 @@ img {
   margin: 0;
   line-height: 26px;
 }
+
+.htmlWidth{
+  width: calc(75% - 14px);
+}
+
+.cssWidth{
+  width: calc(70% - 14px)
+}
+
+.jsWidth{
+  width: calc(50% - 14px)
+}
+
+.angularWidth{
+  width: calc(50% - 14px)
+}
+
+.tsWidth{
+  width: calc(45% - 14px)
+}
+
+.netCoreHidth{
+  width: calc(40% - 14px)
+}
+
+.sqlWidth{
+  width: calc(60% - 14px)
+}
+
+.pythonWidth{
+  width: calc(65% - 14px)
+}
+
+.umlWidth{
+  width: calc(50% - 14px)
+}
+
+.mlWidth{
+  width: calc(40% - 14px)
+}
+
+.wordWidth{
+  width: calc(100% - 14px)
+}
+
+.powerpointWidth{
+  width: calc(100% - 14px)
+}
+
+.excelWidth{
+  width: calc(85% - 14px)
+}
+
+
 /* SOFTSKILLS/ */
 
 /* TRABALHOS FEITOS */
@@ -1503,4 +1557,16 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--bg-black-50);
+}
+
+.certificado {
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.elaborataModal{
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
 }

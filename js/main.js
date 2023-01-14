@@ -262,23 +262,44 @@ window.addEventListener("load", () => {
   }, 600)
 })
 
-// Get the modal
-let modal = document.getElementById("modalElaborata");
+// Get the Elaborata modal
+let modalElaborata = document.getElementById("modalElaborata");
 
-let btn = document.getElementById("btnModalElaborata");
+let btnElaborata = document.getElementById("btnModalElaborata");
 
-let span = document.getElementsByClassName("close")[0];
+let spanElaborata = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
+btnElaborata.onclick = function () {
+  modalElaborata.style.display = "block";
 }
 
-span.onclick = function () {
-  modal.style.display = "none";
+spanElaborata.onclick = function () {
+  modalElaborata.style.display = "none";
 }
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalElaborata) {
+    modalElaborata.style.display = "none";
+  }
+}
+
+// Get the Html Css modal
+let modalHtml = document.getElementById("modalHtml");
+
+let btnHtml = document.getElementById("btnModalHtml");
+
+let spanHtml = document.getElementsByClassName("close")[0];
+
+btnHtml.onclick = function () {
+  modalHtml.style.display = "block";
+}
+
+spanHtml.onclick = function () {
+  modalHtml.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == modalHtml) {
+    modalHtml.style.display = "none";
   }
 }
