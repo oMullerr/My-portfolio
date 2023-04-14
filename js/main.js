@@ -78,14 +78,10 @@
     // 
     if (event.target.classList.contains("tab-item") &&
       !event.target.classList.contains("active")) {
-      const target = event.target.getAttribute("data-target");
-      //   
-      tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active");
-      //   
+      const target = event.target.getAttribute("data-target");  
+      tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active");  
       event.target.classList.add("active", "outer-shadow");
-      // 
       aboutSection.querySelector(".tab-content.active").classList.remove("active");
-      // 
       aboutSection.querySelector(target).classList.add("active");
     }
   })
@@ -284,22 +280,22 @@ window.onclick = function (event) {
 }
 
 // Get the Html Css modal
-let modalHtml = document.getElementById("modalHtml");
+let modalHtmlCss = document.getElementById("modalHtmlCss");
 
-let btnHtml = document.getElementById("btnModalHtml");
+let btnHtmlCss = document.getElementById("btnModalHtmlCss");
 
-let spanHtml = document.getElementsByClassName("close")[0];
+let spanHtmlCss = document.getElementsByClassName("close2")[0];
 
-btnHtml.onclick = function () {
-  modalHtml.style.display = "block";
+btnHtmlCss.onclick = function () {
+  modalHtmlCss.style.display = "block";
 }
 
-spanHtml.onclick = function () {
-  modalHtml.style.display = "none";
+spanHtmlCss.onclick = function () {
+  modalHtmlCss.style.display = "none";
 }
 
 window.onclick = function (event) {
-  if (event.target == modalHtml) {
-    modalHtml.style.display = "none";
+  if (event.target == modalHtmlCss) {
+    modalHtmlCss.style.display = "none";
   }
 }
