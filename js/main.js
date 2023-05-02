@@ -258,44 +258,30 @@ window.addEventListener("load", () => {
   }, 600)
 })
 
-// Get the Elaborata modal
-let modalElaborata = document.getElementById("modalElaborata");
+// Modal 1
+// Get modal
+let modal = document.getElementById("myModal");
 
-let btnElaborata = document.getElementById("btnModalElaborata");
+let btn = document.getElementById("myBtn");
 
-let spanElaborata = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
-btnElaborata.onclick = function () {
-  modalElaborata.style.display = "block";
+// Open modal
+btn.onclick = function() {
+  modal.style.display = "block";
+  let pdfIframe = document.getElementById("pdfIframe");
+
+  pdfIframe.style.height = modal.clientHeight - 60 + "px";
 }
 
-spanElaborata.onclick = function () {
-  modalElaborata.style.display = "none";
+// Close modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
-window.onclick = function (event) {
-  if (event.target == modalElaborata) {
-    modalElaborata.style.display = "none";
-  }
-}
-
-// Get the Html Css modal
-let modalHtmlCss = document.getElementById("modalHtmlCss");
-
-let btnHtmlCss = document.getElementById("btnModalHtmlCss");
-
-let spanHtmlCss = document.getElementsByClassName("close2")[0];
-
-btnHtmlCss.onclick = function () {
-  modalHtmlCss.style.display = "block";
-}
-
-spanHtmlCss.onclick = function () {
-  modalHtmlCss.style.display = "none";
-}
-
-window.onclick = function (event) {
-  if (event.target == modalHtmlCss) {
-    modalHtmlCss.style.display = "none";
+// close modal when click outside of modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
