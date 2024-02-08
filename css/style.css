@@ -549,7 +549,7 @@ img {
 .home-section .home-text,
 .home-section .home-img {
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 60%;
   padding: 0 15px;
 }
 
@@ -562,7 +562,7 @@ img {
 
 .home-section .home-text h2 {
   font-size: 55px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--text-black-900);
   margin: 0;
 }

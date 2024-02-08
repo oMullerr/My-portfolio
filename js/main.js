@@ -265,23 +265,3 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 
 let span = document.getElementsByClassName("close")[0];
-
-// Open modal
-btn.onclick = function() {
-  modal.style.display = "block";
-  let pdfIframe = document.getElementById("pdfIframe");
-
-  pdfIframe.style.height = modal.clientHeight - 60 + "px";
-}
-
-// Close modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// close modal when click outside of modal
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
