@@ -52,17 +52,20 @@ dayNight.addEventListener("click", () =>{
 })
 
 function themeMode(){
-    if(localStorage.getItem("theme") !== null){
-        if(localStorage.getItem("theme") === "light"){
-            document.body.classList.remove("dark");
-        }
-        else{
-            document.body.classList.add("dark");
-        }
+    const savedTheme = localStorage.getItem("theme");
+    
+    if(savedTheme === null || savedTheme === "dark"){
+        document.body.classList.add("dark");
+    } else {
+        document.body.classList.remove("dark");
     }
     updateIcon();
 }
-themeMode();
+
+// Chama a função quando o documento estiver pronto
+document.addEventListener("DOMContentLoaded", () => {
+    themeMode();
+});
 
 function updateIcon(){
     if(document.body.classList.contains("dark")){

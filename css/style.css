@@ -852,7 +852,6 @@ img {
   font-size: 20px;
   color: var(--text-black-700);
   margin: 0 0 5px;
-  text-transform: capitalize;
 }
 
 .about-section .timeline .timeline-item-inner h4 {
@@ -948,7 +947,7 @@ img {
 }
 
 .htmlWidth{
-  width: calc(75% - 14px);
+  width: calc(85% - 14px);
 }
 
 .cssWidth{
@@ -956,19 +955,23 @@ img {
 }
 
 .jsWidth{
-  width: calc(50% - 14px)
+  width: calc(60% - 14px)
 }
 
 .angularWidth{
-  width: calc(50% - 14px)
+  width: calc(70% - 14px)
+}
+
+.reactWidth{
+  width: calc(40% - 14px)
 }
 
 .tsWidth{
-  width: calc(45% - 14px)
+  width: calc(70% - 14px)
 }
 
 .netCoreHidth{
-  width: calc(50% - 14px)
+  width: calc(70% - 14px)
 }
 
 .sqlWidth{
@@ -979,7 +982,7 @@ img {
   width: calc(65% - 14px)
 }
 
-.umlWidth{
+.oracleWidth{
   width: calc(50% - 14px)
 }
 
@@ -988,11 +991,11 @@ img {
 }
 
 .wordWidth{
-  width: calc(100% - 14px)
+  width: calc(90% - 14px)
 }
 
 .powerpointWidth{
-  width: calc(100% - 14px)
+  width: calc(90% - 14px)
 }
 
 .excelWidth{
